@@ -1,0 +1,250 @@
+/* 
+Website Name: Favourite Movie
+Website Author: Shalil Dsilva
+Student id: 0810045 
+
+Color Guide:
+rgba(255, 255, 255, .5) - Grey
+
+Typography Guide:
+body: Nothing You Could Do', cursive, sans-serif;
+h1,h2,h3 :  font-family: 'Monoton', cursive, sans-serif;
+pre: font-family: 'notosansmono', 'arial', 'sans-serif';
+
+*********************************
+=================
+Table of Contents
+=================
+1. Body Styles
+2. Header Styles
+3. Main Styles
+2. Footer Styles
+*********************************
+*/
+
+
+@font-face {
+    font-family: 'notosansmono';
+    src: url('../fonts/notosansmono-variablefont_wdthwght-webfont.ttf');
+    src: url('../fonts/notosansmono-variablefont_wdthwght-webfont.woff');
+    src: url('../fonts/notosansmono-variablefont_wdthwght-webfont.woff2');
+}
+
+/******************
+1. Body Styles 
+*******************/
+body {
+    font-family: 'Nothing You Could Do', cursive, sans-serif;
+    background-color: gray;
+    background-image: linear-gradient(transparent 50%, rgba(255, 255, 255, .5) 50%);
+    background-size: 50px 50px;
+    background-attachment: fixed;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Monoton', cursive, sans-serif;
+}
+
+/******************
+2. Header Styles 
+*******************/
+header {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    object-position: top;
+    object-fit: cover;
+    padding: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+nav ul li {
+    border: solid 1px;
+    padding: 10px 40px;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a:visited {
+    color: darkgreen;
+}
+
+/******************
+3. Main Styles 
+*******************/
+main {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+main h2,
+main figure {
+    text-align: center;
+}
+
+main figure:first-of-type {
+    position: relative;
+    overflow: hidden;
+}
+
+main figure:first-of-type img {
+    height: 400px;
+}
+
+main figure:first-of-type figcaption {
+    position: absolute;
+    text-align: right;
+    width: 50%;
+    bottom: 4px;
+    right: 10px;
+    padding: 20px 30px 20px 0px;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+}
+
+main h2 {
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+main h3 {
+    font-size: 30px;
+}
+
+
+div {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+aside {
+    flex: 2;
+}
+
+aside h3 {
+    border-bottom: 3px solid;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+aside ol {
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+aside ol li {
+    list-style: decimal;
+}
+
+article {
+    flex: 2;
+}
+
+main article p:first-of-type::first-letter {
+    font-size: 2em;
+}
+
+main article p {
+    letter-spacing: 2px;
+    line-height: normal;
+    padding-top: 5px;
+}
+
+main article p:last-of-type {
+    text-align: right;
+    padding-right: 20px;
+}
+
+main article p a {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+}
+
+main article p a:hover {
+    text-decoration: none;
+}
+
+main article p a:visited {
+    color: blue;
+}
+
+main figure:last-of-type {
+    border: solid 2px;
+    width: 80%;
+    margin: auto;
+}
+main figure:last-of-type figcaption {
+    background-color: gray;
+    color: white;
+    text-align: right;
+    padding: 10px 5px 10px 0;
+}
+pre {
+    font-family: 'notosansmono', 'arial', 'sans-serif';
+    text-align: left;
+    padding-top: 20px;
+}
+var {
+    font-weight: bold;
+    color: goldenrod;
+}
+
+/******************
+4. Footer Styles 
+*******************/
+footer::before {
+    content: url("../images/stClairGriffin.png");
+}
+footer {
+    text-align: center;
+    background-color: gray;
+    border: 2px solid;
+    position: relative;
+    height: 85px;
+    /* margin-top: 20px; */
+    width: 80%;
+    margin: auto;
+    top: 10px;
+}
+
+footer p {
+    position: absolute;
+    font-weight: bold;
+    bottom: 40%;
+    right: 30px;
+}
